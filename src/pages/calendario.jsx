@@ -165,11 +165,11 @@ function Calendario() {
             </div>
           </div>
 
-          <div className="footer-calendar-screen">
+          {/* <div className="footer-calendar-screen">
             <button onClick={(e) => {e.preventDefault(); window.location.href="http://localhost:3000/lista"}}>
               <h3>DETALHES</h3>
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
       <div

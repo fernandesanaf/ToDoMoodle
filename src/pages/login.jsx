@@ -1,6 +1,7 @@
 import React from "react";
 import "../style/login.css";
 import { Link } from "react-router-dom";
+import logo from "../images/logo.png";
 
 
 function Login() {
@@ -12,7 +13,8 @@ function Login() {
     <div className="principal-login">
       <div className="title-login1">
         <div className="title-login2">
-          <h1>TO DO MOODLE</h1>
+          {/* <h1>TO DO MOODLE</h1> */}
+          <img src={logo} alt="logo" />
         </div>
         <div className="subtitle-login">
           <h2>IFSP - Pirituba</h2>
