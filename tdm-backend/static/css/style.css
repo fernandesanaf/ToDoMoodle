@@ -1,0 +1,54 @@
+/* style.css */
+
+.calendar {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .weekdays {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .weekday {
+    font-weight: bold;
+  }
+  
+  .days {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .day {
+    flex: 1 0 14.2857%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .day-number {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .event {
+    margin-bottom: 5px;
+  }
+  
+  .event-title {
+    font-weight: bold;
+  }
+  
+  .event-categories {
+    font-style: italic;
+    color: gray;
+  }
+  

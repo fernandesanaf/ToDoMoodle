@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calendário</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 50px;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+            margin-top: 50px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .day-name {
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .day-cell {
+            padding: 10px;
+            border: 1px solid #ddd;
+            height: 50px;
+            vertical-align: top;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calendário</h1>
+    <div class="grid">
+        <div class="day-name">Seg</div>
+        <div class="day-name">Ter</div>
+        <div class="day-name">Qua</div>
+        <div class="day-name">Qui</div>
+        <div class="day-name">Sex</div>
+        <div class="day-name">Sab</div>
+        <div class="day-name">Dom</div>
+        {% set current_date = datetime.now() %}
+        {% set first_day = datetime(current_date.year, current_date.month, 1) %}
+        {% set start_weekday = first_day.weekday() %}
+        {% for offset in range(-start_weekday, 31-start_weekday) %}
+            {% set day = first_day + timedelta(days=offset) %}
+            {% set event_found = false %}
+            {% for event in events %}
+                {% if event.end_day == day.day %}
+                    {% set event_found = true %}
+                    <div class="highlight day-cell">
+                        <strong>{{ day.day }}</strong>
+                    </div>
+                {% endif %}
+            {% endfor %}
+            <div class="day-cell">
+                {% if event_found %}
+                    <strong>{{ day.day }}</strong>
+                {% else %}
+                    {{ day.day }}
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
