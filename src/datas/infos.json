@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "nomeAtividade": "Projeto de Software",
+      "nomeMateria": "POO",
+      "dataEntrega": "2023-06-08T23:59:59",
+      "descricao": "Desenvolver um sistema de gerenciamento de biblioteca usando POO",
+      "status": "Em andamento",
+      "prioridade": "Alta"
+    },
+    {
+      "id": 2,
+      "nomeAtividade": "Análise de Requisitos",
+      "nomeMateria": "Engenharia de Software",
+      "dataEntrega": "2023-06-30T17:59:59",
+      "descricao": "Realizar entrevistas com os stakeholders para levantar requisitos do projeto",
+      "status": "Pendente",
+      "prioridade": "Média"
+    },
+    {
+      "id": 3,
+      "nomeAtividade": "Implementação de Algoritmos de Escalonamento",
+      "nomeMateria": "Sistemas Operacionais",
+      "dataEntrega": "2023-06-05T23:59:59",
+      "descricao": "Implementar algoritmos de escalonamento de processos em uma simulação",
+      "status": "Concluída",
+      "prioridade": "Baixa"
+    },
+    {
+      "id": 4,
+      "nomeAtividade": "Apresentação sobre Privacidade na Era Digital",
+      "nomeMateria": "Computadores e Sociedade",
+      "dataEntrega": "2023-06-28T23:59:59",
+      "descricao": "Preparar uma apresentação destacando os desafios da privacidade no mundo digital",
+      "status": "Pendente",
+      "prioridade": "Alta"
+    },
+    {
+      "id": 5,
+      "nomeAtividade": "Estudo de Caso Empresarial",
+      "nomeMateria": "Introdução à Administração",
+      "dataEntrega": "2023-06-02T23:59:59",
+      "descricao": "Analisar um estudo de caso de uma empresa e apresentar soluções para seus desafios administrativos",
+      "status": "Pendente",
+      "prioridade": "Média"
+    },
+    {
+      "id": 6,
+      "nomeAtividade": "Modelagem de Banco de Dados",
+      "nomeMateria": "Laboratório de Banco de Dados",
+      "dataEntrega": "2023-06-12T23:59:59",
+      "descricao": "Criar um modelo de banco de dados para um sistema de gerenciamento de vendas",
+      "status": "Em andamento",
+      "prioridade": "Alta"
+    }
+  ]
+  

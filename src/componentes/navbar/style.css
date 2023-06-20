@@ -1,3 +1,7 @@
+*{
+    font-family: 'Questrial', sans-serif;
+}
+
 .body-side-bar{
     background-color: #9ddf97;
     width: 100%;
@@ -5,11 +9,13 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 1;
+    z-index: 200;
     overflow: hidden;
     transition: 0.5s;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
+
+
 
 .inside-body-side-bar{
     display: flex;
@@ -26,4 +32,62 @@
 .logo-rota img{
     width: 50px;
     height: 50px;
+}
+
+.user-config{
+    background-color: #9ddf97;
+    width: 130px;
+    height: calc(100% - 50px);
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-config img{
+    width: 80px;
+    height: 70px;
+}
+
+.header-user-config{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nome-user-config h2{
+    color: #2BA23A;
+    font-size: 15px;
+    font-weight: 550;
+    margin-top: 5px;
+}
+
+.footer-user-config{
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+   
+    align-items: center;
+    position: fixed;
+    bottom: 60px;
+
+}
+
+.footer-user-config img{
+    width: 30px;
+    height: 30px;
+}
+
+.footer-user-config h2{
+    color: #2BA23A;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top: 5px;
 }

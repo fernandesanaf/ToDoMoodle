@@ -11,11 +11,12 @@ import { useState, useEffect } from "react";
 
 import user from "./user.svg";
 import list from "./list.svg";
+import exit from "./exit.svg";
 import logo from "./logo.png";
 
 export const SideBar = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [openUser , setOpenUser] = useState(false);
+  const [openUser, setOpenUser] = useState(false);
 
   function handleClick(index) {
     setActiveIndex(index);
@@ -30,28 +31,60 @@ export const SideBar = () => {
 
   return (
     <section className="body-side-bar">
-      <div className="inside-body-side-bar">
-        <div className="lista-rota" onClick={(e) => {e.preventDefault(); window.location.href="http://localhost:3000/lista"}} >
-          {/* <h2>Lista</h2> */}
-          <img src={list} alt="list" />
-        </div>
-        <div className="logo-rota" onClick={(e) => {e.preventDefault(); window.location.href="http://localhost:3000/calendario"}}>
-          {/* <h2>Home</h2> */}
-          <img src={logo} alt="list" />
-        </div>
-        <div className="user-rota" onClick={()=> setOpenUser(!openUser)}>
-          {/* <h2>Configurações</h2> */}
-          <img src={user} alt="list" />
+      <div className="body-side-bar2">
+        <div className="inside-body-side-bar">
+          <div
+            className="lista-rota"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "http://localhost:3000/lista";
+            }}
+          >
+            {/* <h2>Lista</h2> */}
+            <img src={list} alt="list" />
+          </div>
+          <div
+            className="logo-rota"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "http://localhost:3000/calendario";
+            }}
+          >
+            {/* <h2>Home</h2> */}
+            <img src={logo} alt="list" />
+          </div>
+          <div className="user-rota" onClick={() => setOpenUser(!openUser)}>
+            {/* <h2>Configurações</h2> */}
+            <img src={user} alt="list" />
+          </div>
         </div>
       </div>
 
-      <div className="user-config" style={openUser === true ? {display: "block"} : {display: "none"} }>
-<div className="header-user-config">
-    <img src={logo} alt="logo" />
-     </div>
-     <div className="nome-user-config">
-<h2>Ana Ferndes</h2>
-     </div>
+      <div
+        className="user-config"
+        style={openUser === true ? { display: "block" } : { display: "none" }}
+      >
+        <div className="header-user-config">
+          <div className="header-user-config">
+            <img src={logo} alt="logo" />
+          </div>
+          <div className="nome-user-config">
+            <h2>Ana Fernandes</h2>
+          </div>
+        </div>
+
+        <div className="footer-user-config">
+          <div
+            className="footer-user-config"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "http://localhost:3000/";
+            }}
+          >
+            <img src={exit} alt="exit" />
+            <h2>Logout</h2>
+          </div>
+        </div>
       </div>
     </section>
   );

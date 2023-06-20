@@ -9,37 +9,46 @@
 
 .calendario-screen{
     font-family: 'Questrial', sans-serif;
-    background: #00bf62;
+    background: #ffffff;
     height: 666px;
     width: 100%;
     margin: -1px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .principal-calendar-screen{
-
+margin-bottom: 50px;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
 
 }
-.title-calendar, .title-body{
+.title-calendar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px 20px 10px 20px;
+}
+
+.title-body{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px 20px 10px 20px;
+    margin: 0px 20px 10px 20px;
 }
 
  .title-calendar h2{
     font-size: 17px;
     font-weight: 560;
     margin-bottom: 10px;
-    color: #fff;
+    color: #2BA23A;
       
 }
 
@@ -57,7 +66,7 @@
 
 .body-calendar{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,8 +74,21 @@
     
 }
 
+
 .calendario-mes{
-    background-color: #fff;
+    /* background-color: #fff;
+    border: 1px solid #00bf62; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendario-mes h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: #00bf62;
+   
 }
 
 .body-screen{
@@ -151,4 +173,59 @@
     justify-content: center;
     text-align: center;
     align-items: center;
+}
+
+#h1-scrool{
+    font-size: 15px;
+    font-weight:600;
+    color: #00bf62;
+
+    margin: 10px;
+}
+
+.view-overflow{
+    /* border: 1px solid #00bf62; */
+    width: 100%;
+
+    /* height: 100px; */
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.card-view{
+    border: 2px solid #00bf62;
+    border-radius: 10px;
+    height: 80%;
+    /* width: 1300px; */
+    /* max-width: 1300px; */
+   margin: 0 10px 0px 10px;
+   padding: 10px;
+}
+
+.header-card{
+    width: 300px;
+    max-width: 300px;
+   
+}
+.info-card{
+    width: 300px;
+    max-width: 300px;
+    margin-left: 10px;
+    height: 50px;
+    max-height: 50px;
+    overflow-y: auto;
+}
+
+.info-card2{
+    margin-top: 10px;
+    display: flex;
+}
+
+#h2-modal-calendar{
+    color: #ffffff;
+    font-size: 17px;
 }
